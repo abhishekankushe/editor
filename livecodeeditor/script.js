@@ -59,4 +59,3 @@ function switcher(panelIndex) {
   });
   allPanels[panelIndex].style.display = "block";
 }
-

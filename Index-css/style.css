@@ -13,6 +13,13 @@ html{
     --navbar-height: 59px;
 }
 
+
+
+
+
+
+
+
 /* Navigation Bar */
 #navbar{
     display: flex;
@@ -30,7 +37,7 @@ html{
     height: 100%;
     width:100%;
     z-index: -1;
-    opacity: 0.7;
+    opacity: 1.2;
 }
 
 /* Navigation Bar: Logo and Image */
@@ -46,6 +53,20 @@ html{
 
 
 /* Navigation Bar: List Styling */
+
+#navbar {
+    position:relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-around; /* Add this line */
+    align-items: center; /* Add this line */
+    padding: 0 20px; /* Add this line */
+  }
 
 #navbar ul{
     display: flex;
@@ -71,6 +92,11 @@ html{
 }
 
 /* Home Section */
+html, body {
+    overflow-x: hidden;
+  }
+
+
 #home{
     display: flex;
     flex-direction: column;
@@ -133,7 +159,7 @@ html{
 
 /* About us */
 #about-us{ 
-    position: relative;
+    position: initial;
 }
 
 #about-us::before{

@@ -1,60 +1,225 @@
-/* Navigation */
-#navbar {
-    flex-direction: column;
-}
+/* Make the navigation bar items center-aligned on smaller screens */
+@media only screen and (max-width: 768px) {
+    #navbar ul {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    #navbar ul li {
+      padding: 10px;
+    }
+    
+    #navbar ul li a {
+      padding: 8px 16px;
+      border-radius: 10px;
+    }
+  }
+  
+  /* Change the font size and padding of the navigation bar items on smaller screens */
+  @media only screen and (max-width: 480px) {
+    #navbar ul li {
+      font-size: 1rem;
+      padding: 5px;
+    }
+    
+    #navbar ul li a {
+      padding: 6px 12px;
+    }
+  }
+  
+  /* Change the background color of the active navigation bar item */
+  #navbar ul li a.active {
+    background-color: #ffb347;
+    color: black;
+  }
+  
+  /* Add a transition effect to the navigation bar items */
+  #navbar ul li a {
+    transition: background-color 0.3s ease;
+  }
+  
+  #navbar ul li a:hover {
+    background-color: #ffb347;
+    color: black;
+  }
+  
+  /* Add a dropdown menu for the benefits item on smaller screens */
+  @media only screen and (max-width: 768px) {
+    #navbar ul li.dropdown {
+      position: relative;
+    }
+    
+    #navbar ul li.dropdown ul {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: white;
+      box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+      display: none;
+    }
+    
+    #navbar ul li.dropdown ul li {
+      font-size: 0.9rem;
+    }
+    
+    #navbar ul li.dropdown:hover ul {
+      display: block;
+    }
+  }
 
-#navbar ul li a{
-    font-size: 1rem;
-    padding: 0px 7px;
-    padding-bottom: 8px;
-}
 /* Home section */
-#home{
-    height: 370px; 
+#home {
+    height: 370px;
     padding: 3px 28px;
 }
 
-#home::before{
-    height: 480px; 
+#home::before {
+    height: 480px;
 }
 
-#home p{
+#home p {
     font-size: 13px;
 }
 
-/* Services section  */
-#services{
+/* Services section */
+#services {
     flex-direction: column;
 }
 
-#services .box { 
+#services .box {
     padding: 14px;
-    margin: 2px 0px; 
+    margin: 2px 0px;
     margin-bottom: 20px;
 }
 
-/* Clients section */
-#clients{
-    flex-wrap: wrap;
-}
-
-#clients img{
-    width: 66px;
-    padding: 6px;
-    height: auto;
-}
-
-/* Contact us section */
-#contact-box form{
-    width:80%;
-}
-/* Footer */
-
-/* Utility classes */
-.h-primary{
-    font-size:26px;
-}
-.btn{
-    font-size: 13px;
-    padding: 4px 8px;
-}
+/* Set the viewport width to device width */
+html {
+    width: 100%;
+  }
+  
+  /* Make the navigation bar items center-aligned on smaller screens */
+  @media only screen and (max-width: 768px) {
+    #navbar ul {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    #navbar ul li {
+      padding: 10px;
+    }
+    
+    #logo {
+      width: 50%;
+    }
+  }
+  
+  /* Make the home section more compact on smaller screens */
+  @media only screen and (max-width: 768px) {
+    #home {
+      height: 200px;
+      padding: 3px 20px;
+    }
+    
+    #home::before {
+      height: 300px;
+    }
+    
+    #home p {
+      font-size: 12px;
+    }
+  }
+  
+  /* Make the benefits section more compact on smaller screens */
+  @media only screen and (max-width: 768px) {
+    #benefits-container {
+      height: auto;
+    }
+    
+    #benefits {
+      flex-wrap: wrap;
+    }
+    
+    .box {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    
+    .box img {
+      width: 100%;
+    }
+    
+    .box p {
+      font-size: 12px;
+    }
+  }
+  
+  /* Make the about-us section more compact on smaller screens */
+  @media only screen and (max-width: 768px) {
+    #about-us {
+      height: auto;
+    }
+    
+    #about {
+      flex-wrap: wrap;
+    }
+    
+    .About-Us {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    
+    .About-Us img {
+      width: 100%;
+    }
+  }
+  
+  /* Make the contact section more compact on smaller screens */
+  @media only screen and (max-width: 768px) {
+    #contact {
+      height: auto;
+    }
+    
+    .contact-col {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    
+    .contact-col div {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  /* Make the feedback section more compact on smaller screens */
+  @media only screen and (max-width: 768px) {
+    #feedback {
+      height: auto;
+    }
+    
+    #feedback-box form {
+      width: 100%;
+    }
+  }
+  
+  /* Center the footer text on smaller screens */
+  @media only screen and (max-width: 768px) {
+    footer {
+      text-align: center;
+    }
+  }
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    #navbar {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .item {
+      padding: 10px;
+    }
+    
+    #logo {
+      width: 50%;
+    }
+  }
